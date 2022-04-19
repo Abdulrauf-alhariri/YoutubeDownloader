@@ -1,0 +1,27 @@
+{
+  "name": "YoutubeDownloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulrauf-alhariri/YoutubeDownloader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdulrauf-alhariri/YoutubeDownloader/issues"
+  },
+  "homepage": "https://github.com/Abdulrauf-alhariri/YoutubeDownloader#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.15"
+  }
+}
