@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Youtube Mp3 Downloader</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" action="convert-mp3" method="post">
+        <h1><i class="fa-brands fa-youtube"></i>Youtube MP3 Converter</h1>
+        <label for="url">Enter the video url</label>
+
+        <div class="box-container">
+          <div class="search-box">
+            <input
+              type="text"
+              name="videoUrl"
+              id="url"
+              placeholder="Video link"
+            />
+            <input type="submit" value="Convert" />
+          </div>
+
+          <div class="box res-box">
+            <% if(typeof success != "undefined" && success){ %>
+            <div class="download-box">
+              <p><%= video_title %></p>
+              <a href="<%= video_link %>">Download</a>
+            </div>
+            <% } else if(typeof success != "undefined" && !success) {%>
+            <div class="error-box">
+              <p>Please enter a vaild link</p>
+            </div>
+            <%}%>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

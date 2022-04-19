@@ -1,0 +1,105 @@
+/* Start Global rules  */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+h1 {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: bold;
+}
+input {
+    border: none;
+    outline: none;
+    padding:  2rem;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+.container {
+    align-items: flex-end;
+    background-color: rgb(196, 48, 43);
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.form {
+    text-align: center;
+}
+
+.box-container {
+    transform: translateY(50%);
+    color: #2c2c2c;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    bottom: -10rem;
+    width: 100%;
+}
+.search-box {
+    border-radius: 5rem;
+    border: 1px solid #e4e4e4;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 10px #e4e4e4;
+}
+
+.error-box {
+    color: whitesmoke;
+    border:1px solid rgb(196, 48, 43);
+    background-color: rgb(196, 48, 43, 80%);
+    padding: 2rem;
+}
+
+.download-box {
+    margin-top: 4rem;
+}
+.download-box p {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.download-box a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    background-color: rgb(196, 48, 43);
+    width: fit-content;
+    margin: 0 auto;
+    color: whitesmoke;
+    margin-top: 1rem;
+    font-size: 2.3rem;
+    border-radius: 5px;
+}
